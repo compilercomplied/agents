@@ -5,10 +5,7 @@ A Dockerized Claude Code environment with `mise` for dynamic language runtimes a
 ## Usage
 
 ### 1. Build & Push
-```bash
-docker build -t ghcr.io/YOUR_USER/claude-agent:latest .
-docker push ghcr.io/YOUR_USER/claude-agent:latest
-```
+Check `publish.sh` script.
 
 ### 2. Run
 ```bash
