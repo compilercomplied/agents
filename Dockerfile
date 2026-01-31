@@ -49,8 +49,8 @@ RUN npm install -g @anthropic-ai/claude-code
 ENV MISE_INSTALL_PATH=/home/claude/.local/bin/mise
 RUN curl https://mise.run | sh
 
-# 5. Configure PATH to prioritize mise-managed tools
-ENV PATH="/home/claude/.local/share/mise/shims:$PATH"
+# 5. Configure PATH to prioritize mise-managed tools and include local bin for mise executable
+ENV PATH="/home/claude/.local/share/mise/shims:/home/claude/.local/bin:$PATH"
 
 WORKDIR /app
 
