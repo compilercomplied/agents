@@ -31,5 +31,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/compilercomplied/claude-agent:latest
+          tags: ghcr.io/compilercomplied/agents:latest
           platforms: linux/amd64
